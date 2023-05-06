@@ -69,6 +69,7 @@ function displayEmptyListMessage() {
   }
 }
 displayEmptyListMessage();
+
 // on click on filter btn fetch books published aftrer 2010
 btnFilter.addEventListener("click", () => {
   let year = parseInt(yearFilterElementNode.value);
@@ -79,9 +80,17 @@ btnFilter.addEventListener("click", () => {
   } else {
     yearFilterElementNode.style.border = "1px solid red";
   }
-  let filteredBooks = bookArray.filter((book) => {
-    return book.year >= year;
-  });
+  let filteredBooks = bookArray
+    .filter((book) => {
+      return book.year >= year;
+    })
+    .map((book) => {
+      return {
+        name: book.name,
+        author: book.author.toUpperCase(),
+        year: book.year,
+      };
+    });
   if (filteredBooks.length !== 0) {
     displayBooksList(filteredBooks);
   }
