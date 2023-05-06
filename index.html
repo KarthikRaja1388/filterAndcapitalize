@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Filter books</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="add-book-container">
+        <div class="form-group">
+          <input
+            type="text"
+            class="book-name"
+            placeholder="enter name of a book"
+          />
+          <input
+            type="text"
+            class="author-name"
+            placeholder="Enter author name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="year-published"
+            placeholder="Enter published year"
+          />
+          <button class="btn btn-add-book">Add Book</button>
+        </div>
+      </div>
+      <div class="book-list-container">
+        <div class="filter-container form-group">
+          <input
+            type="text"
+            class="year-filter"
+            placeholder="Enter published year"
+          />
+          <button class="btn btn-filter">Filter</button>
+        </div>
+        <div class="book-list">
+          <h3 class="published-after"></h3>
+          <table class="book-table">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Author</td>
+                <td>Published on</td>
+              </tr>
+            </thead>
+            <tbody class="table-body"> </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

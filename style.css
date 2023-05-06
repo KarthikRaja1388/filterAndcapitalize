@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 240, 241, 0.5);
+}
+.main {
+  min-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.add-book-container,
+.book-list-container {
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgb(44, 62, 80);
+}
+.form-group {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+input {
+  padding: 0.5rem;
+  border: none;
+  box-shadow: 0 0 3px rgb(189, 195, 199);
+}
+input:focus {
+  outline: none;
+}
+.btn {
+  background-color: rgb(142, 68, 173);
+  border: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(142, 68, 173, 0.5);
+  color: rgb(44, 62, 80);
+}
+.book-table {
+  min-width: 100%;
+  text-align: center;
+}
+thead {
+  background-color: rgb(44, 62, 80);
+  color: #fff;
+}
+td {
+  padding: 0.5rem;
+}
